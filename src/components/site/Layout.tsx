@@ -21,7 +21,7 @@ const NAV = [
 function Logo({ light }: { light?: boolean }) {
   return (
     <Link to="/" className="flex min-w-0 items-center">
-      <span className={cn("inline-flex shrink-0 items-center rounded-md bg-[#CFF8FA] px-2 py-1", light && "shadow-soft")}>
+      <span className={cn("inline-flex shrink-0 items-center", light && "drop-shadow-sm")}>
         <img src={mahalaxmiLogo} alt="Mahalaxmi Admission Guidance" className="h-12 w-auto max-w-[220px] object-contain sm:h-14" />
       </span>
     </Link>
