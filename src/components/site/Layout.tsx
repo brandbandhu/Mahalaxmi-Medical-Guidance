@@ -1,10 +1,11 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
-import { Camera as Instagram, MapPin, Menu, MessageCircle, Phone, X, GraduationCap } from "lucide-react";
+import { Camera as Instagram, MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { useLang } from "@/lib/i18n";
 import { CONTACT, COURSES, SERVICES } from "@/lib/data";
 import { cn } from "@/lib/utils";
+import mahalaxmiLogo from "@/assets/mahalaxmi logo .png";
 
 const NAV = [
   { to: "/", en: "Home", mr: "मुख्यपृष्ठ" },
@@ -19,13 +20,9 @@ const NAV = [
 
 function Logo({ light }: { light?: boolean }) {
   return (
-    <Link to="/" className="flex min-w-0 items-center gap-2.5">
-      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-brand text-primary-foreground shadow-soft">
-        <GraduationCap className="h-5 w-5" />
-      </span>
-      <span className="min-w-0 leading-tight">
-        <span className={cn("block truncate font-display text-base font-extrabold", light ? "text-on-dark" : "text-navy")}>Mahalaxmi</span>
-        <span className={cn("block truncate text-[11px] font-semibold uppercase tracking-[0.16em]", light ? "text-on-dark/70" : "text-muted-foreground")}>Medical Guidance</span>
+    <Link to="/" className="flex min-w-0 items-center">
+      <span className={cn("inline-flex shrink-0 items-center rounded-md bg-[#CFF8FA] px-2 py-1", light && "shadow-soft")}>
+        <img src={mahalaxmiLogo} alt="Mahalaxmi Admission Guidance" className="h-12 w-auto max-w-[220px] object-contain sm:h-14" />
       </span>
     </Link>
   );

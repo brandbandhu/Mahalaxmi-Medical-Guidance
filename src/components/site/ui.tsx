@@ -62,9 +62,10 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 
 export function PageHero({ eyebrow, title, sub, img, children }: { eyebrow: string; title: ReactNode; sub: string; img: string; children?: ReactNode }) {
   const { t } = useLang();
-  void img;
   return (
     <section className="relative overflow-hidden bg-ice pt-28 pb-10 sm:pt-32 sm:pb-12">
+      <img src={img} alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/88 via-white/64 to-white/30" />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <nav className="flex items-center gap-2 text-sm font-bold text-navy/70" aria-label="Breadcrumb">

@@ -48,8 +48,9 @@ function Hero() {
   return (
     <section className="relative min-h-[760px] overflow-hidden bg-navy pt-28 pb-16 sm:pt-36 lg:pb-24">
       <img src={IMG.campus} alt="" className="absolute inset-0 h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-white/92 via-white/76 to-white/20" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white/78 via-white/34 to-navy/18" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy/18 via-transparent to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background/75 to-transparent" />
       <div className="relative mx-auto flex max-w-7xl items-center px-5 sm:px-8">
         <div className="max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
