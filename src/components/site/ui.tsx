@@ -65,16 +65,16 @@ export function PageHero({ eyebrow, title, sub, img, children }: { eyebrow: stri
   return (
     <section className="relative overflow-hidden bg-ice pt-28 pb-10 sm:pt-32 sm:pb-12">
       <img src={img} alt="" className="absolute inset-0 h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-white/88 via-white/64 to-white/30" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/48 to-black/24" />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <nav className="flex items-center gap-2 text-sm font-bold text-navy/70" aria-label="Breadcrumb">
-            <Link to="/" className="transition hover:text-primary">{t("Home", "मुख्यपृष्ठ")}</Link>
+          <nav className="flex items-center gap-2 text-sm font-bold text-on-dark/78" aria-label="Breadcrumb">
+            <Link to="/" className="transition hover:text-sun">{t("Home", "मुख्यपृष्ठ")}</Link>
             <span className="text-sun">/</span>
-            <span className="text-navy">{eyebrow}</span>
+            <span className="text-on-dark">{eyebrow}</span>
           </nav>
-          <h1 className="mt-4 max-w-4xl text-3xl font-extrabold leading-[1.08] text-navy sm:text-4xl lg:text-5xl">{title}</h1>
-          <p className="mt-3 max-w-2xl text-base font-semibold text-navy/70">{sub}</p>
+          <h1 className="mt-4 max-w-4xl text-3xl font-extrabold leading-[1.08] text-on-dark sm:text-4xl lg:text-5xl">{title}</h1>
+          <p className="mt-3 max-w-2xl text-base font-semibold text-on-dark/78">{sub}</p>
           {children}
         </Reveal>
       </div>

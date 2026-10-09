@@ -48,32 +48,32 @@ function Hero() {
   return (
     <section className="relative min-h-[760px] overflow-hidden bg-navy pt-28 pb-16 sm:pt-36 lg:pb-24">
       <img src={IMG.campus} alt="" className="absolute inset-0 h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-white/78 via-white/34 to-navy/18" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy/18 via-transparent to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background/75 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/44 to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background/45 to-transparent" />
       <div className="relative mx-auto flex max-w-7xl items-center px-5 sm:px-8">
         <div className="max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <Eyebrow>{t("Your Trusted Admission Partner", "तुमचा विश्वासू प्रवेश साथीदार")}</Eyebrow>
           </motion.div>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }}
-            className="mt-6 text-[2.6rem] font-extrabold leading-[1.02] text-navy sm:text-6xl xl:text-7xl">
-            {t("Your Dream of ", "")}<span className="text-gradient">{t("Becoming a Doctor", "डॉक्टर बनण्याचे")}</span>{t(" Starts Here.", " स्वप्न इथून सुरू होते.")}
+            className="mt-6 text-[2.6rem] font-extrabold leading-[1.02] text-on-dark sm:text-6xl xl:text-7xl">
+            {t("Your Dream of ", "")}<span className="text-sun">{t("Becoming a Doctor", "डॉक्टर बनण्याचे")}</span>{t(" Starts Here.", " स्वप्न इथून सुरू होते.")}
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.25 }}
-            className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            className="mt-6 max-w-xl text-lg leading-relaxed text-on-dark/82">
             {t("Expert NEET counselling, medical admission guidance and personalized support to help you explore the right college and career opportunities.",
               "योग्य कॉलेज व करिअर संधी शोधण्यासाठी तज्ज्ञ NEET समुपदेशन, वैद्यकीय प्रवेश मार्गदर्शन आणि वैयक्तिक सहाय्य.")}
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4 }} className="mt-9 flex flex-col gap-3 sm:flex-row">
             <BtnSun to="/contact">{t("Get Admission Guidance", "प्रवेश मार्गदर्शन मिळवा")} <ArrowRight className="h-4 w-4" /></BtnSun>
-            <Link to="/courses" className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-navy/15 bg-background px-7 py-4 text-sm font-bold text-navy transition hover:border-primary hover:text-primary">
+            <Link to="/courses" className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-on-dark/25 bg-background/95 px-7 py-4 text-sm font-bold text-navy transition hover:border-sun hover:text-primary">
               {t("Explore Our Courses", "आमचे कोर्सेस पहा")}
             </Link>
           </motion.div>
         </div>
       </div>
-      <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="relative mt-10 hidden justify-center text-navy/50 lg:flex">
+      <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="relative mt-10 hidden justify-center text-on-dark/70 lg:flex">
         <ChevronDown className="h-6 w-6" />
       </motion.div>
     </section>
